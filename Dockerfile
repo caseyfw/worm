@@ -17,6 +17,12 @@ COPY packages/shared/ packages/shared/
 COPY packages/server/ packages/server/
 COPY packages/web/ packages/web/
 
+# Recreate workspace symlinks (buildkit overlayfs can invalidate them after COPY)
+RUN rm -rf node_modules/@worm && mkdir -p node_modules/@worm && \
+    ln -s ../../packages/shared node_modules/@worm/shared && \
+    ln -s ../../packages/server node_modules/@worm/server && \
+    ln -s ../../packages/web node_modules/@worm/web
+
 # Build all workspaces (shared → server, web)
 RUN npm run build
 
