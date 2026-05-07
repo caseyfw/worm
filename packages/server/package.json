@@ -1,0 +1,24 @@
+{
+  "name": "@worm/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "@worm/shared": "*",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "tsx": "^4.19.0",
+    "vitest": "^3.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  }
+}

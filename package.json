@@ -1,0 +1,28 @@
+{
+  "name": "worm",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Real-time audience reaction indicator",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
+    "lint": "eslint \"packages/*/src/**/*.{ts,tsx}\"",
+    "format": "prettier --write \"packages/*/src/**/*.{ts,tsx,css,html}\" \"*.{md,json}\"",
+    "dev": "npm run dev --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
