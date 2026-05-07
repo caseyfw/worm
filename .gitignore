@@ -10,3 +10,4 @@ npm-debug.log*
 !.env.example
 .vite/
 .cache/
+tsconfig.tsbuildinfo

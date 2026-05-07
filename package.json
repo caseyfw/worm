@@ -8,7 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build -w @worm/shared && npm run build -w @worm/server && npm run build -w @worm/web",
+    "clean": "npm run clean --workspaces --if-present",
+    "build": "npm run build -w @worm/shared && npm run build -w @worm/web && npm run build -w @worm/server",
     "test": "npm run test --workspaces --if-present",
     "lint": "eslint \"packages/*/src/**/*.{ts,tsx}\"",
     "format": "prettier --write \"packages/*/src/**/*.{ts,tsx,css,html}\" \"*.{md,json}\"",
