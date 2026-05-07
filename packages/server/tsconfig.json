@@ -1,8 +1,12 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "baseUrl": "../..",
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "paths": {
+      "@worm/shared": ["packages/shared/dist/index.d.ts"]
+    }
   },
   "include": ["src/**/*"]
 }
