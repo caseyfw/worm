@@ -9,12 +9,12 @@ A real-time audience reaction indicator, inspired by Roy Morgan's "The Reactor",
 ```bash
 npm install
 npm run build
-npm run dev -w @worm/server
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-For development with hot-reload on the frontend, run both in separate terminals:
+Or you can run in separate terminals:
 
 ```bash
 npm run dev -w @worm/server    # backend on :3000
