@@ -1,4 +1,4 @@
-# Worm
+# The Worm 📈
 
 A real-time audience reaction indicator, inspired by Roy Morgan's "The Reactor", commonly called [The Worm](https://en.wikipedia.org/wiki/Worm_(marketing)). Audience members tap 👍 or 👎; the server aggregates reactions and broadcasts a score between `-1` and `+1` once per second. Connected browsers render the resulting "worm" snaking across a full-window dark-mode graph.
 
