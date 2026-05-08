@@ -78,6 +78,7 @@ packages/
 | `npm run build` | Build all workspaces (shared → server + web) |
 | `npm test` | Run Vitest tests |
 | `npm run lint` | ESLint across all packages |
+| `npm run dev` | Start app in watch mode |
 | `npm run dev -w @worm/server` | Start server in watch mode (tsx) |
 | `npm run dev -w @worm/web` | Start Vite dev server with HMR |
 
